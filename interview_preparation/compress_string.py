@@ -18,3 +18,4 @@ while i < len(chars):
     i += 1
 
 print(t)
+
