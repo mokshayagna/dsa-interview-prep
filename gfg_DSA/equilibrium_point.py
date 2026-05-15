@@ -16,4 +16,3 @@ for i in range(len(a)):
     if left == right:
         print(i)
         break
-    
