@@ -1,7 +1,8 @@
-arr = [[2, 4],[1, 3],[9, 10],[6, 8]]
-res = []
-arr.sort(key=lambda x: x[0])
-
-for i in arr:
-    res.append(i)
-print(res)
+# reverse a number
+n = 20
+rev = 0
+while n > 0:
+    rem = n % 10
+    rev = rev * 10 + rem
+    n = n // 10
+print(rev)
