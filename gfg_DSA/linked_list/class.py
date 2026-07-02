@@ -97,23 +97,23 @@ withdraw(amount) — deducts money from balance
 show_balance() — prints current balance
 
     """
-class Bank:
-    def __init__(self,name,balance,amount):
-        self.branch = "SBI"
-        self.name = name
-        self.balance = balance
-        self.amount = amount
-        self.final_amount = None
-    def deposit(self):
-        self.final_amount = self.balance + self.amount
-        print(f"Final ammount after deposit is {self.final_amount}")
-    def withdraw(self):
-        self.final_amount = self.balance - self.amount
-        print(f"Final amount after withdraw {self.final_amount}")
-    def show_balance(self):
-        print(f"balance:{self.final_amount}")
-a = Bank("moksha",23,5)
+# class Bank:
+#     def __init__(self,name,balance,amount):
+#         self.branch = "SBI"
+#         self.name = name
+#         self.balance = balance
+#         self.amount = amount
+#         self.final_amount = None
+#     def deposit(self):
+#         self.final_amount = self.balance + self.amount
+#         print(f"Final ammount after deposit is {self.final_amount}")
+#     def withdraw(self):
+#         self.final_amount = self.balance - self.amount
+#         print(f"Final amount after withdraw {self.final_amount}")
+#     def show_balance(self):
+#         print(f"balance:{self.final_amount}")
+# a = Bank("moksha",23,5)
 
-a.deposit()
-a.withdraw()
-a.show_balance()
+# a.deposit()
+# a.withdraw()
+# a.show_balance()
