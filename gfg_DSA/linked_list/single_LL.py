@@ -88,7 +88,7 @@ class single_LL:
             prev = temp
             temp = temp.next
                 
-            
+
     def printing(self):
         if self.head is None:
             print("Linkend List is empty")
