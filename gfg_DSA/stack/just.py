@@ -66,17 +66,17 @@ Output: aaabbcccc
 #             num -= 1
 # print("".join(l))
     
-n = 10203004
-l = []
-for digit in str(n):
-    if digit != "0":
-        l.append(digit)
-    x = "".join(l)
-sum = 0
-for i in l:
-    sum = sum + int(i)
-print(sum)
-print(x)
-print(type(x))
+# n = 10203004
+# l = []
+# for digit in str(n):
+#     if digit != "0":
+#         l.append(digit)
+#     x = "".join(l)
+# sum = 0
+# for i in l:
+#     sum = sum + int(i)
+# print(sum)
+# print(x)
+# print(type(x))
 
-print(sum * int(x))
+# print(sum * int(x))
