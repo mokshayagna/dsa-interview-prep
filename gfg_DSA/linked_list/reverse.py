@@ -24,19 +24,31 @@ class single_LL:
                 print(temp.data,end = "--->")
                 temp = temp.next
 
+    # def reverse(self):
+    #     if self.head is None:
+    #         return
+    #     l = []
+    #     temp = self.head
+    #     while temp is not None:
+    #         l.append(temp)
+    #         temp = temp.next
+    #     for i in range(len(l)-1, 0, -1):
+    #         l[i].next = l[i-1]
+
+    #     l[0].next = None
+    #     self.head = l[-1]
+    
     def reverse(self):
         if self.head is None:
             return
-        l = []
-        temp = self.head
-        while temp is not None:
-            l.append(temp)
-            temp = temp.next
-        for i in range(len(l)-1, 0, -1):
-            l[i].next = l[i-1]
-
-        l[0].next = None
-        self.head = l[-1]
+        prev = None
+        current = self.head
+        while current is not None:
+            next_node = current.next
+            current.next = prev
+            prev = current
+            current = next_node
+        self.head = prev
         
 if __name__ == "__main__":
     ll = single_LL()
@@ -44,5 +56,6 @@ if __name__ == "__main__":
     ll.insert_at_beggining(20)
     ll.insert_at_beggining(30)
     ll.insert_at_beggining(40)
+    ll.printing()
     ll.reverse()
     ll.printing()
