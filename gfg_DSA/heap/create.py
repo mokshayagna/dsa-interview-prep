@@ -28,7 +28,6 @@ class heap:
             self.heap[i] = self.heap[largest]
             self.heap[largest] = temp
             self.max_heapify(largest)
-            
 def main():
     h = heap()
     h.heap = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
